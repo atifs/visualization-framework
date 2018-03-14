@@ -91,6 +91,7 @@ class GeoMap extends AbstractGraph {
             key={marker[idColumn]}
             position={{ lat: marker[latitudeColumn], lng: marker[longitudeColumn] }}
             onClick={() => this.toggleInfoWindow(marker[idColumn])}
+            icon={'/icons/icon-nsgateway-resized.png'}
           >
             {this.infowindow(marker)}
           </Marker>
